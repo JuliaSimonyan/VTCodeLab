@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+//[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("VTC_CodeLab")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dee5acb855938bee5574384493bdb3460caa77db")]
 [assembly: System.Reflection.AssemblyProductAttribute("VTC_CodeLab")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VTC_CodeLab")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
