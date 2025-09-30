@@ -1,0 +1,103 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - VTCodeLab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/vtcodelab-auth.css">
+</head>
+<body>
+  
+
+    <!-- Replaced Bootstrap layout with VTCodeLab dark theme styling -->
+    <div class="auth-container">
+        <div class="auth-content">
+            <div class="auth-form-section">
+                <div class="auth-header">
+                    <h1 class="auth-title">Create Account</h1>
+                    <p class="auth-subtitle">Join VTCodeLab and start your coding journey</p>
+                </div>
+
+                <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="auth-form">
+                    <div asp-validation-summary="ModelOnly" class="validation-summary" role="alert"></div>
+
+                    <!-- Converted Bootstrap form-floating to custom VTCodeLab form styling -->
+                    <div class="form-group">
+                        <label asp-for="Input.FullName" class="form-label">Full Name</label>
+                        <input asp-for="Input.FullName" class="form-input" placeholder="Enter your full name" />
+                        <span asp-validation-for="Input.FullName" class="form-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Input.Email" class="form-label">Email Address</label>
+                        <input asp-for="Input.Email" class="form-input" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                        <span asp-validation-for="Input.Email" class="form-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Input.Password" class="form-label">Password</label>
+                        <input asp-for="Input.Password" class="form-input" type="password" autocomplete="new-password" aria-required="true" placeholder="Create a strong password" />
+                        <span asp-validation-for="Input.Password" class="form-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Input.ConfirmPassword" class="form-label">Confirm Password</label>
+                        <input asp-for="Input.ConfirmPassword" class="form-input" type="password" autocomplete="new-password" aria-required="true" placeholder="Confirm your password" />
+                        <span asp-validation-for="Input.ConfirmPassword" class="form-error"></span>
+                    </div>
+
+                    <button id="registerSubmit" type="submit" class="auth-button primary">
+                        Create Account
+                    </button>
+                </form>
+
+               
+
+                <!-- Styled external login section to match VTCodeLab theme -->
+                <div class="external-auth">
+                    @{
+                        if ((Model.ExternalLogins?.Count ?? 0) == 0)
+                        {
+                            <div class="external-auth-placeholder">
+                                <p class="external-auth-message">
+                                    External authentication services are not configured.
+                                    <a href="https://go.microsoft.com/fwlink/?LinkID=532715" class="external-auth-link">Learn more</a>
+                                </p>
+                            </div>
+                        }
+                        else
+                        {
+                            <form id="external-account" asp-area="Identity" asp-route-page="/Account/ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                                <div class="external-providers">
+                                    @foreach (var provider in Model.ExternalLogins!)
+                                    {
+                                        <button type="submit" class="auth-button external" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">
+                                            <span class="provider-icon">@provider.DisplayName.Substring(0, 1)</span>
+                                            Continue with @provider.DisplayName
+                                        </button>
+                                    }
+                                </div>
+                            </form>
+                        }
+                    }
+                </div>
+
+                <div class="auth-footer">
+                    <p>Already have an account? <a href="/login" class="auth-link">Sign in here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+    }
+</body>
+</html>
