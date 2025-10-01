@@ -991,3 +991,4 @@ C:\Users\Computer\Desktop\VTCodeLab\VTCodeLab\VTC_CodeLab\obj\Debug\net8.0\scope
 C:\Users\Computer\Desktop\VTCodeLab\VTCodeLab\VTC_CodeLab\obj\Debug\net8.0\VTC_CodeLab.csproj.CopyComplete
 C:\Users\Computer\Desktop\VTCodeLab\VTCodeLab\VTC_CodeLab\obj\Debug\net8.0\VTC_CodeLab.genruntimeconfig.cache
 C:\Users\Computer\Desktop\VTCodeLab\VTCodeLab\VTC_CodeLab\obj\Debug\net8.0\ref\VTC_CodeLab.dll
+C:\Users\User\Desktop\Surprise\VTC_CodeLab\obj\Debug\net8.0\VTC_CodeLab.sourcelink.json

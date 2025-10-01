@@ -1,21 +1,82 @@
 ﻿@page
 @model LogoutModel
+
 @{
     ViewData["Title"] = "Log out";
 }
+<link rel="stylesheet" href="~/css/logout.css">
+<link rel="stylesheet" href="~/css/vtcodelab-auth.css">
 
-<header>
-    <h1>@ViewData["Title"]</h1>
-    @{
-        if (User.Identity?.IsAuthenticated ?? false)
-        {
-            <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/", new { area = "" })" method="post">
-                <button type="submit" class="nav-link btn btn-link text-dark">Click here to Logout</button>
-            </form>
-        }
-        else
-        {
-            <p>You have successfully logged out of the application.</p>
-        }
-    }
-</header>
+<div class="vtcodelab-auth-container">
+    <div class="vtcodelab-auth-wrapper">
+        <div class="vtcodelab-auth-header">
+            <h1 class="vtcodelab-auth-title">
+                @if (User.Identity?.IsAuthenticated ?? false)
+                {
+                    <text>Sign Out</text>
+                }
+                else
+                {
+                    <text>Signed Out</text>
+                }
+            </h1>
+            <p class="vtcodelab-auth-subtitle">
+                @if (User.Identity?.IsAuthenticated ?? false)
+                {
+                    <text>Are you sure you want to sign out?</text>
+                }
+                else
+                {
+                    <text>You have successfully logged out</text>
+                }
+            </p>
+        </div>
+
+        <div class="vtcodelab-auth-content">
+            <div class="vtcodelab-auth-main">
+                @if (User.Identity?.IsAuthenticated ?? false)
+                {
+                    <form class="vtcodelab-form" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/", new { area = "" })" method="post">
+                        <div class="vtcodelab-logout-info">
+                            <svg class="vtcodelab-logout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                                <polyline points="16 17 21 12 16 7"></polyline>
+                                <line x1="21" y1="12" x2="9" y2="12"></line>
+                            </svg>
+                            <p>You will be signed out of your account and redirected to the home page.</p>
+                        </div>
+
+                        <button type="submit" class="vtcodelab-btn vtcodelab-btn-primary">
+                            Confirm Sign Out
+                        </button>
+
+                        <div class="vtcodelab-auth-links">
+                            <a href="/" class="vtcodelab-link">Cancel and go back</a>
+                        </div>
+                    </form>
+                }
+                else
+                {
+                    <div class="vtcodelab-logout-success">
+                        <svg class="vtcodelab-success-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                        <p>You have been successfully signed out of your account.</p>
+                    </div>
+
+                    <div class="vtcodelab-logout-actions">
+                        <a href="/" class="vtcodelab-btn vtcodelab-btn-primary">
+                            Return to Home
+                        </a>
+                        <a asp-page="./Login" class="vtcodelab-btn vtcodelab-btn-secondary">
+                            Sign In Again
+                        </a>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+

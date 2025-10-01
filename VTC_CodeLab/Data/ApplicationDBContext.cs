@@ -9,5 +9,10 @@ namespace VTC_CodeLab.Data
         public ApplicationDBContext(DbContextOptions<ApplicationDBContext> options) : base(options)
         {
         }
+        public DbSet<Course> Courses { get; set; }
+        public DbSet<Lesson> Lessons { get; set; }
+        public DbSet<Test> Tests { get; set; }
+        public DbSet<Submission> Submissions { get; set; }
+
     }
 }

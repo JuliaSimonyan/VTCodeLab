@@ -1,5 +1,29 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/VTC_CodeLab/css/admin-styles.5msxg0ke0u.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\admin-styles.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5msxg0ke0u"},{"Name":"integrity","Value":"sha256-Hd9OLlI8DJsNnlh8beMuhz\u002BBP6yxG3Ce7uK\u002BBzppnN0="},{"Name":"label","Value":"_content/VTC_CodeLab/css/admin-styles.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"14167"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Hd9OLlI8DJsNnlh8beMuhz\u002BBP6yxG3Ce7uK\u002BBzppnN0=\u0022"},{"Name":"Last-Modified","Value":"Wed, 01 Oct 2025 06:01:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/VTC_CodeLab/css/admin-styles.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\admin-styles.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Hd9OLlI8DJsNnlh8beMuhz\u002BBP6yxG3Ce7uK\u002BBzppnN0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"14167"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Hd9OLlI8DJsNnlh8beMuhz\u002BBP6yxG3Ce7uK\u002BBzppnN0=\u0022"},{"Name":"Last-Modified","Value":"Wed, 01 Oct 2025 06:01:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/VTC_CodeLab/css/logout.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\logout.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-63KWUrtiEDbewc51EIEo/2xF6fxydu9HjS94TlYijCY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1188"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u002263KWUrtiEDbewc51EIEo/2xF6fxydu9HjS94TlYijCY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 01 Oct 2025 07:42:26 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/VTC_CodeLab/css/logout.prbm802q4q.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\logout.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"prbm802q4q"},{"Name":"integrity","Value":"sha256-63KWUrtiEDbewc51EIEo/2xF6fxydu9HjS94TlYijCY="},{"Name":"label","Value":"_content/VTC_CodeLab/css/logout.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1188"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u002263KWUrtiEDbewc51EIEo/2xF6fxydu9HjS94TlYijCY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 01 Oct 2025 07:42:26 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/VTC_CodeLab/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -23,6 +47,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"p2g4z0l581"},{"Name":"integrity","Value":"sha256-Yb3DeV2V/dFyRF8aDXNs02NjyWHwFKsrigJPk1m1TcA="},{"Name":"label","Value":"_content/VTC_CodeLab/css/styles.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"11892"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Yb3DeV2V/dFyRF8aDXNs02NjyWHwFKsrigJPk1m1TcA=\u0022"},{"Name":"Last-Modified","Value":"Fri, 19 Sep 2025 05:48:27 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/VTC_CodeLab/css/vtcodelab-admin.978gt02itp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\vtcodelab-admin.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"978gt02itp"},{"Name":"integrity","Value":"sha256-e5VdXCQoABqH8fxlDxhCl3QGqxzT9qmdAJpVjh9a3jE="},{"Name":"label","Value":"_content/VTC_CodeLab/css/vtcodelab-admin.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5098"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022e5VdXCQoABqH8fxlDxhCl3QGqxzT9qmdAJpVjh9a3jE=\u0022"},{"Name":"Last-Modified","Value":"Wed, 01 Oct 2025 07:58:10 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/VTC_CodeLab/css/vtcodelab-admin.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\vtcodelab-admin.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-e5VdXCQoABqH8fxlDxhCl3QGqxzT9qmdAJpVjh9a3jE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5098"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022e5VdXCQoABqH8fxlDxhCl3QGqxzT9qmdAJpVjh9a3jE=\u0022"},{"Name":"Last-Modified","Value":"Wed, 01 Oct 2025 07:58:10 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/VTC_CodeLab/css/vtcodelab-auth.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\vtcodelab-auth.css'))</AssetFile>
