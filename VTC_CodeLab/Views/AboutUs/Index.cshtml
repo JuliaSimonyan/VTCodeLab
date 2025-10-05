@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - VTCodeLab</title>
+    <meta name="description" content="Learn about VTCodeLab's mission to empower the next generation of developers through quality coding education.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="~/css/about-contact.css">
+</head>
+
+
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1 class="page-title">About <span class="highlight">VTCodeLab</span></h1>
+                <p class="page-subtitle">Empowering the next generation of developers through innovative education</p>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <section class="mission-section">
+        <div class="container">
+            <div class="mission-grid">
+                <div class="mission-content slide-in-left">
+                    <h2>Our Mission</h2>
+                    <p>At VTCodeLab, we believe that quality coding education should be accessible to every student who dreams of building a career in technology. Our mission is to provide comprehensive, hands-on learning experiences that transform beginners into confident developers.</p>
+                    <p>We combine structured curriculum with real-world projects, creating an environment where students don't just learn to code—they learn to think like developers.</p>
+                </div>
+                <div class="mission-image slide-in-right">
+                    <img src="~/Images/group.jpg" alt="Students learning together">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="values-section">
+        <div class="container">
+            <h2 class="section-title fade-in">Our Core Values</h2>
+            <div class="values-grid">
+                <div class="value-card" data-delay="0">
+                    <div class="value-icon">🎯</div>
+                    <h3>Excellence</h3>
+                    <p>We maintain the highest standards in our curriculum, ensuring every student receives world-class education.</p>
+                </div>
+                <div class="value-card" data-delay="100">
+                    <div class="value-icon">🤝</div>
+                    <h3>Community</h3>
+                    <p>Learning is better together. We foster a supportive community where students help each other grow.</p>
+                </div>
+                <div class="value-card" data-delay="200">
+                    <div class="value-icon">💡</div>
+                    <h3>Innovation</h3>
+                    <p>We stay ahead of industry trends, teaching the latest technologies and best practices.</p>
+                </div>
+                <div class="value-card" data-delay="300">
+                    <div class="value-icon">🚀</div>
+                    <h3>Growth</h3>
+                    <p>We're committed to continuous improvement, both for our students and our platform.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-section">
+        <div class="container">
+            <h2 class="section-title fade-in">Meet Our Team</h2>
+            <p class="team-intro fade-in">Passionate educators and industry professionals dedicated to your success</p>
+            <div class="team-grid">
+                <div class="team-member" data-delay="0">
+                    <div class="member-image">
+                        <img src="~/Images/team1.jpg" alt="Team Member">
+                    </div>
+                    <h3>Sarah Johnson</h3>
+                    <p class="member-role">Founder & Lead Instructor</p>
+                    <p class="member-bio">10+ years at Google, passionate about making coding accessible to everyone.</p>
+                </div>
+                <div class="team-member" data-delay="100">
+                    <div class="member-image">
+                        <img src="~/Images/team2.jpg" alt="Team Member">
+                    </div>
+                    <h3>Michael Chen</h3>
+                    <p class="member-role">Senior Developer & Mentor</p>
+                    <p class="member-bio">Full-stack expert with experience at Meta and Amazon.</p>
+                </div>
+                <div class="team-member" data-delay="200">
+                    <div class="member-image">
+                        <img src="/Images/team3.jpg" alt="Team Member">
+                    </div>
+                    <h3>Emily Rodriguez</h3>
+                    <p class="member-role">Curriculum Director</p>
+                    <p class="member-bio">Former Microsoft engineer, specializing in educational technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content fade-in">
+                <h2>Ready to Start Your Journey?</h2>
+                <p>Join thousands of students who are building their future in tech</p>
+                <div class="cta-buttons">
+
+                <a asp-area="Identity" asp-page="/Account/Register" class="btn-primary">Get Started</a>
+                <a asp-action ="index" asp-controller="ContactUs" class="btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <script src="~/js/about-contact.js"></script>

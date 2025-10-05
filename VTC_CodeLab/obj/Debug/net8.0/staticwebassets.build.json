@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FfIv3KmehG+OXKYpmdq/+Uhmh8p46AtZqRsKZt9o8aw=",
+  "Hash": "rUrE9Qmcegkda56xl+G0zSHhKPUD6LPDx/0pC2d5V6g=",
   "Source": "VTC_CodeLab",
   "BasePath": "_content/VTC_CodeLab",
   "Mode": "Default",
@@ -1424,6 +1424,27 @@
       "OriginalItemSpec": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\VTC_CodeLab.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\css\\about-contact.css",
+      "SourceId": "VTC_CodeLab",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\",
+      "BasePath": "_content/VTC_CodeLab",
+      "RelativePath": "css/about-contact#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kw2o158qq0",
+      "Integrity": "TAY7oP1EILnYHoFpABYBKLW9cDs9BSXrLjHyRq924zI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\about-contact.css"
+    },
+    {
       "Identity": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\css\\admin-styles.css",
       "SourceId": "VTC_CodeLab",
       "SourceType": "Discovered",
@@ -1569,6 +1590,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\Images\\group.jpg",
+      "SourceId": "VTC_CodeLab",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\",
+      "BasePath": "_content/VTC_CodeLab",
+      "RelativePath": "Images/group#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pdh7511h26",
+      "Integrity": "vWwrjGTUJJF1nu8ps6IdSb7blhEdh+LWWN205jZbFRI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\group.jpg"
     },
     {
       "Identity": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\Images\\p1.png",
@@ -1800,6 +1842,90 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\photo_2025-09-11_11-25-36.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\Images\\team1.jpg",
+      "SourceId": "VTC_CodeLab",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\",
+      "BasePath": "_content/VTC_CodeLab",
+      "RelativePath": "Images/team1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vyuvotb56g",
+      "Integrity": "ebUadsxGf8aG8RsEv3i/QuSeD+fhbgljcVItWMpcauM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\team1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\Images\\team2.jpg",
+      "SourceId": "VTC_CodeLab",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\",
+      "BasePath": "_content/VTC_CodeLab",
+      "RelativePath": "Images/team2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2yl7dh2eph",
+      "Integrity": "2ht6/egIIXQr+2twhnX/cBV4BfLckoMpJA8WNsLJawI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\team2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\Images\\team3.jpg",
+      "SourceId": "VTC_CodeLab",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\",
+      "BasePath": "_content/VTC_CodeLab",
+      "RelativePath": "Images/team3#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "k6effeu7if",
+      "Integrity": "dAOqXLHXzyTAoKR+UTzbgNyAilc0fhaUWy3PXYn8hN8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\team3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\js\\about-contact.js",
+      "SourceId": "VTC_CodeLab",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\",
+      "BasePath": "_content/VTC_CodeLab",
+      "RelativePath": "js/about-contact#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9v6rd7pyyz",
+      "Integrity": "e+tpxDOeylyxGEt9ywuVKQvaZtjz//daGxYv0bLUxj0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\about-contact.js"
     },
     {
       "Identity": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\js\\package.json",
@@ -3134,6 +3260,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-tnamWuQ2F5I2J8hbtBt4/9i8Mb2y2o+9Tepj5tUrSdU="
+        }
+      ]
+    },
+    {
+      "Route": "css/about-contact.css",
+      "AssetFile": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\css\\about-contact.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11569"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TAY7oP1EILnYHoFpABYBKLW9cDs9BSXrLjHyRq924zI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 02 Oct 2025 07:37:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TAY7oP1EILnYHoFpABYBKLW9cDs9BSXrLjHyRq924zI="
+        }
+      ]
+    },
+    {
+      "Route": "css/about-contact.kw2o158qq0.css",
+      "AssetFile": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\css\\about-contact.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11569"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TAY7oP1EILnYHoFpABYBKLW9cDs9BSXrLjHyRq924zI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 02 Oct 2025 07:37:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kw2o158qq0"
+        },
+        {
+          "Name": "label",
+          "Value": "css/about-contact.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TAY7oP1EILnYHoFpABYBKLW9cDs9BSXrLjHyRq924zI="
         }
       ]
     },
@@ -6043,6 +6251,88 @@
       ]
     },
     {
+      "Route": "Images/group.jpg",
+      "AssetFile": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\Images\\group.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "811957"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vWwrjGTUJJF1nu8ps6IdSb7blhEdh+LWWN205jZbFRI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 02 Oct 2025 07:52:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vWwrjGTUJJF1nu8ps6IdSb7blhEdh+LWWN205jZbFRI="
+        }
+      ]
+    },
+    {
+      "Route": "Images/group.pdh7511h26.jpg",
+      "AssetFile": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\Images\\group.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "811957"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vWwrjGTUJJF1nu8ps6IdSb7blhEdh+LWWN205jZbFRI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 02 Oct 2025 07:52:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pdh7511h26"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/group.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vWwrjGTUJJF1nu8ps6IdSb7blhEdh+LWWN205jZbFRI="
+        }
+      ]
+    },
+    {
       "Route": "Images/p1.meengvvubn.png",
       "AssetFile": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\Images\\p1.png",
       "Selectors": [],
@@ -6941,6 +7231,334 @@
         {
           "Name": "integrity",
           "Value": "sha256-tz8p4suKq84dg5cDXAGaBcCrfS4gO6poejzG7fVNpg0="
+        }
+      ]
+    },
+    {
+      "Route": "Images/team1.jpg",
+      "AssetFile": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\Images\\team1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "116771"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ebUadsxGf8aG8RsEv3i/QuSeD+fhbgljcVItWMpcauM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 May 2022 02:54:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ebUadsxGf8aG8RsEv3i/QuSeD+fhbgljcVItWMpcauM="
+        }
+      ]
+    },
+    {
+      "Route": "Images/team1.vyuvotb56g.jpg",
+      "AssetFile": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\Images\\team1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "116771"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ebUadsxGf8aG8RsEv3i/QuSeD+fhbgljcVItWMpcauM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 May 2022 02:54:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vyuvotb56g"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/team1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ebUadsxGf8aG8RsEv3i/QuSeD+fhbgljcVItWMpcauM="
+        }
+      ]
+    },
+    {
+      "Route": "Images/team2.2yl7dh2eph.jpg",
+      "AssetFile": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\Images\\team2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "99373"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2ht6/egIIXQr+2twhnX/cBV4BfLckoMpJA8WNsLJawI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 May 2022 02:54:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2yl7dh2eph"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/team2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2ht6/egIIXQr+2twhnX/cBV4BfLckoMpJA8WNsLJawI="
+        }
+      ]
+    },
+    {
+      "Route": "Images/team2.jpg",
+      "AssetFile": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\Images\\team2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "99373"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2ht6/egIIXQr+2twhnX/cBV4BfLckoMpJA8WNsLJawI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 May 2022 02:54:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2ht6/egIIXQr+2twhnX/cBV4BfLckoMpJA8WNsLJawI="
+        }
+      ]
+    },
+    {
+      "Route": "Images/team3.jpg",
+      "AssetFile": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\Images\\team3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92402"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dAOqXLHXzyTAoKR+UTzbgNyAilc0fhaUWy3PXYn8hN8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 May 2022 02:53:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dAOqXLHXzyTAoKR+UTzbgNyAilc0fhaUWy3PXYn8hN8="
+        }
+      ]
+    },
+    {
+      "Route": "Images/team3.k6effeu7if.jpg",
+      "AssetFile": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\Images\\team3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92402"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dAOqXLHXzyTAoKR+UTzbgNyAilc0fhaUWy3PXYn8hN8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 May 2022 02:53:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k6effeu7if"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/team3.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dAOqXLHXzyTAoKR+UTzbgNyAilc0fhaUWy3PXYn8hN8="
+        }
+      ]
+    },
+    {
+      "Route": "js/about-contact.9v6rd7pyyz.js",
+      "AssetFile": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\js\\about-contact.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3632"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e+tpxDOeylyxGEt9ywuVKQvaZtjz//daGxYv0bLUxj0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 02 Oct 2025 08:10:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9v6rd7pyyz"
+        },
+        {
+          "Name": "label",
+          "Value": "js/about-contact.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-e+tpxDOeylyxGEt9ywuVKQvaZtjz//daGxYv0bLUxj0="
+        }
+      ]
+    },
+    {
+      "Route": "js/about-contact.js",
+      "AssetFile": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\js\\about-contact.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3632"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e+tpxDOeylyxGEt9ywuVKQvaZtjz//daGxYv0bLUxj0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 02 Oct 2025 08:10:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-e+tpxDOeylyxGEt9ywuVKQvaZtjz//daGxYv0bLUxj0="
         }
       ]
     },

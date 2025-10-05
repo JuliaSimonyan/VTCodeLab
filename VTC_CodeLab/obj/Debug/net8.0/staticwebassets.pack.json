@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\VTC_CodeLab.vyofr8lrb2.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\Images\\group.jpg",
+      "PackagePath": "staticwebassets\\Images\\group.jpg"
+    },
+    {
       "Id": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\Images\\p1.png",
       "PackagePath": "staticwebassets\\Images\\p1.png"
     },
@@ -49,6 +53,22 @@
       "PackagePath": "staticwebassets\\Images\\photo_2025-09-11_11-25-36.jpg"
     },
     {
+      "Id": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\Images\\team1.jpg",
+      "PackagePath": "staticwebassets\\Images\\team1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\Images\\team2.jpg",
+      "PackagePath": "staticwebassets\\Images\\team2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\Images\\team3.jpg",
+      "PackagePath": "staticwebassets\\Images\\team3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\css\\about-contact.css",
+      "PackagePath": "staticwebassets\\css\\about-contact.css"
+    },
+    {
       "Id": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\css\\admin-styles.css",
       "PackagePath": "staticwebassets\\css\\admin-styles.css"
     },
@@ -75,6 +95,10 @@
     {
       "Id": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\js\\about-contact.js",
+      "PackagePath": "staticwebassets\\js\\about-contact.js"
     },
     {
       "Id": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\js\\package.json",

@@ -31,10 +31,10 @@
                 <a href="#home">VTCodeLab</a>
             </div>
             <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#courses" class="nav-link">Courses</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a asp-area="Home" asp-action="index" asp-controller="Home"  class="nav-link">Home</a>
+                <a asp-area="Home" asp-action="index" asp-controller="AboutUs" class="nav-link">About</a>
+                <a asp-area="Home"  class="nav-link">Courses</a>
+                <a asp-area="Home"  asp-action="index" asp-controller="ContactUs" class="nav-link">Contact</a>
 
                 @if (SignInManager.IsSignedIn(User))
                 {
@@ -64,7 +64,7 @@
     </nav>
 
     <div class="container-fluid">
-        <main role="main" class="pb-3">
+        <main role="main" >
             @RenderBody()
         </main>
     </div>
