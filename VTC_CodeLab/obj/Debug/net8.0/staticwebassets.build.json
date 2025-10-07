@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rUrE9Qmcegkda56xl+G0zSHhKPUD6LPDx/0pC2d5V6g=",
+  "Hash": "L3z3YV58JNNxvrFsVgiDl/b1zOaXPUroBjrZRiMkBEU=",
   "Source": "VTC_CodeLab",
   "BasePath": "_content/VTC_CodeLab",
   "Mode": "Default",
@@ -1529,6 +1529,27 @@
       "OriginalItemSpec": "wwwroot\\css\\styles.css"
     },
     {
+      "Identity": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\css\\teacher-styles.css",
+      "SourceId": "VTC_CodeLab",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\",
+      "BasePath": "_content/VTC_CodeLab",
+      "RelativePath": "css/teacher-styles#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ibo75f76ca",
+      "Integrity": "ItiHObwsD+SzGLLM4YM6CRUi/s7NXygpu/H3N0L0yU4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\teacher-styles.css"
+    },
+    {
       "Identity": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\css\\vtcodelab-admin.css",
       "SourceId": "VTC_CodeLab",
       "SourceType": "Discovered",
@@ -1543,8 +1564,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "978gt02itp",
-      "Integrity": "e5VdXCQoABqH8fxlDxhCl3QGqxzT9qmdAJpVjh9a3jE=",
+      "Fingerprint": "g47zvtz5va",
+      "Integrity": "MG46/1KEPGHi0m4bT7bwHOJT7OCBlfYk4enpnUN1q7A=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\vtcodelab-admin.css"
@@ -3674,8 +3695,8 @@
       ]
     },
     {
-      "Route": "css/vtcodelab-admin.978gt02itp.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\css\\vtcodelab-admin.css",
+      "Route": "css/teacher-styles.css",
+      "AssetFile": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\css\\teacher-styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3684,7 +3705,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5098"
+          "Value": "15392"
         },
         {
           "Name": "Content-Type",
@@ -3692,11 +3713,48 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"e5VdXCQoABqH8fxlDxhCl3QGqxzT9qmdAJpVjh9a3jE=\""
+          "Value": "\"ItiHObwsD+SzGLLM4YM6CRUi/s7NXygpu/H3N0L0yU4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 01 Oct 2025 07:58:10 GMT"
+          "Value": "Tue, 07 Oct 2025 07:05:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ItiHObwsD+SzGLLM4YM6CRUi/s7NXygpu/H3N0L0yU4="
+        }
+      ]
+    },
+    {
+      "Route": "css/teacher-styles.ibo75f76ca.css",
+      "AssetFile": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\css\\teacher-styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15392"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ItiHObwsD+SzGLLM4YM6CRUi/s7NXygpu/H3N0L0yU4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 07 Oct 2025 07:05:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3706,15 +3764,15 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "978gt02itp"
+          "Value": "ibo75f76ca"
         },
         {
           "Name": "label",
-          "Value": "css/vtcodelab-admin.css"
+          "Value": "css/teacher-styles.css"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-e5VdXCQoABqH8fxlDxhCl3QGqxzT9qmdAJpVjh9a3jE="
+          "Value": "sha256-ItiHObwsD+SzGLLM4YM6CRUi/s7NXygpu/H3N0L0yU4="
         }
       ]
     },
@@ -3729,7 +3787,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5098"
+          "Value": "8773"
         },
         {
           "Name": "Content-Type",
@@ -3737,11 +3795,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"e5VdXCQoABqH8fxlDxhCl3QGqxzT9qmdAJpVjh9a3jE=\""
+          "Value": "\"MG46/1KEPGHi0m4bT7bwHOJT7OCBlfYk4enpnUN1q7A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 01 Oct 2025 07:58:10 GMT"
+          "Value": "Mon, 06 Oct 2025 12:02:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3751,7 +3809,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-e5VdXCQoABqH8fxlDxhCl3QGqxzT9qmdAJpVjh9a3jE="
+          "Value": "sha256-MG46/1KEPGHi0m4bT7bwHOJT7OCBlfYk4enpnUN1q7A="
+        }
+      ]
+    },
+    {
+      "Route": "css/vtcodelab-admin.g47zvtz5va.css",
+      "AssetFile": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\css\\vtcodelab-admin.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8773"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MG46/1KEPGHi0m4bT7bwHOJT7OCBlfYk4enpnUN1q7A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 06 Oct 2025 12:02:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g47zvtz5va"
+        },
+        {
+          "Name": "label",
+          "Value": "css/vtcodelab-admin.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MG46/1KEPGHi0m4bT7bwHOJT7OCBlfYk4enpnUN1q7A="
         }
       ]
     },

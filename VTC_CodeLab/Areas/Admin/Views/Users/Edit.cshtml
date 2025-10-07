@@ -1,0 +1,83 @@
+﻿@model VTC_CodeLab.Models.ViewModels.Users.EditUserViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Edit User";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<link rel="stylesheet" href="~/css/vtcodelab-admin.css">
+
+<div class="admin-form-container">
+    <div class="admin-form-card">
+        <div class="admin-form-header">
+            <h1>Edit User</h1>
+            <p>Update user information and permissions</p>
+        </div>
+
+        <form asp-action="Edit" method="post" class="admin-form">
+            <div asp-validation-summary="ModelOnly" class="validation-summary"></div>
+
+            <div class="form-group">
+                <label asp-for="FullName" class="form-label">
+                    <svg class="form-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    Full Name
+                </label>
+                <input asp-for="FullName" class="form-input" placeholder="Enter full name" />
+                <span asp-validation-for="FullName" class="validation-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Email" class="form-label">
+                    <svg class="form-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    Email Address
+                </label>
+                <input asp-for="Email" class="form-input" type="email" placeholder="user@example.com" />
+                <span asp-validation-for="Email" class="validation-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Role" class="form-label">
+                    <svg class="form-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                        <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                    Role
+                </label>
+                <select asp-for="Role" class="form-select">
+                    <option value="">Select a role</option>
+                    @foreach (var role in Model.Roles)
+                    {
+                        <option value="@role">@role</option>
+                    }
+                </select>
+                <span asp-validation-for="Role" class="validation-error"></span>
+            </div>
+
+          
+
+            <div class="form-actions">
+                <input type="hidden" asp-for="Id" />
+
+                <button type="submit" class="btn-primary">
+
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                        <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                        <polyline points="7 3 7 8 15 8"></polyline>
+                    </svg>
+                    Update User
+                </button>
+                <a asp-action="Index" class="btn-secondary">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

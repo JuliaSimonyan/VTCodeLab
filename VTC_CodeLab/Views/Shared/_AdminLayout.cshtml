@@ -9,6 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@title - VTCodeLab</title>
+    <link rel="stylesheet" href="~/css/vtcodelab-admin.css">
 
     <!-- Fonts & CSS -->
     <link rel="stylesheet" href="~/css/admin-styles.css">
@@ -40,7 +41,7 @@
                 </svg>
                 <span>Dashboard</span>
             </a>
-            <a href="#users" class="nav-item" data-page="users">
+            <a asp-area="Admin" asp-controller="Users" asp-action="Index" class="nav-item" data-page="users">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                     <circle cx="9" cy="7" r="4"></circle>

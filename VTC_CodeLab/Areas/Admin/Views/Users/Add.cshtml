@@ -1,0 +1,88 @@
+﻿@model VTC_CodeLab.Models.ViewModels.Users.AddUserViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Add New User";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<link rel="stylesheet" href="~/css/vtcodelab-admin.css">
+
+<div class="vtcodelab-admin-container">
+    <div class="vtcodelab-admin-content">
+        <div class="vtcodelab-page-header">
+            <div class="vtcodelab-page-title-section">
+                <h1 class="vtcodelab-page-title">Manage New Users in VTCodeLab</h1>
+                <p class="vtcodelab-page-subtitle">Create a new user account with role assignment</p>
+            </div>
+        </div>
+
+        <div class="vtcodelab-form-container">
+            <form asp-action="Add" method="post" class="vtcodelab-form">
+                <div class="vtcodelab-form-grid">
+                    <div class="vtcodelab-form-group">
+                        <label class="vtcodelab-form-label">
+                            <svg class="vtcodelab-label-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                            </svg>
+                            Full Name
+                        </label>
+                        <input asp-for="FullName" class="vtcodelab-form-input" placeholder="Enter full name" />
+                    </div>
+
+                    
+                    <div class="vtcodelab-form-group">
+                        <label class="vtcodelab-form-label">
+                            <svg class="vtcodelab-label-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            Email Address
+                        </label>
+                        <input asp-for="Email" class="vtcodelab-form-input" placeholder="user@example.com" />
+                    </div>
+
+                    <div class="vtcodelab-form-group">
+                        <label class="vtcodelab-form-label">
+                            <svg class="vtcodelab-label-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                            User Role
+                        </label>
+                        <select asp-for="Role" class="vtcodelab-form-select">
+                            <option value="">-- Select Role --</option>
+                            @foreach (var role in ViewBag.Roles)
+                            {
+                                <option value="@role">@role</option>
+                            }
+                        </select>
+                    </div>
+
+                    <div class="vtcodelab-form-group">
+                        <label class="vtcodelab-form-label">
+                            <svg class="vtcodelab-label-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                            </svg>
+                            Temporary Password
+                        </label>
+                        <input asp-for="TemporaryPassword" class="vtcodelab-form-input" placeholder="Enter temporary password" />
+                        <p class="vtcodelab-form-hint">User will be required to change this password on first login</p>
+                    </div>
+                </div>
+
+                <div class="vtcodelab-form-actions">
+                    <button type="submit" class="vtcodelab-btn vtcodelab-btn-primary">
+                        <svg class="vtcodelab-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                        </svg>
+                        Add User
+                    </button>
+                    <a asp-action="Index" class="vtcodelab-btn vtcodelab-btn-secondary">
+                        <svg class="vtcodelab-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                        Cancel
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

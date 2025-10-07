@@ -3,6 +3,7 @@ wwwroot\css\admin-styles.css
 wwwroot\css\logout.css
 wwwroot\css\site.css
 wwwroot\css\styles.css
+wwwroot\css\teacher-styles.css
 wwwroot\css\vtcodelab-admin.css
 wwwroot\css\vtcodelab-auth.css
 wwwroot\favicon.ico

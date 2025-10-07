@@ -1,0 +1,391 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard - VTCodeLab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/teacher-styles.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="teacher-sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2>VTCodeLab</h2>
+            <span class="teacher-badge">Teacher</span>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-item active" data-page="dashboard">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="14" width="7" height="7"></rect>
+                    <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="#" class="nav-item" data-page="my-courses">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+                <span>My Courses</span>
+            </a>
+
+            <a href="#" class="nav-item" data-page="available-courses">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+                <span>Available Courses</span>
+            </a>
+
+            <a href="#" class="nav-item" data-page="students">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <span>My Students</span>
+            </a>
+
+            <a href="#" class="nav-item" data-page="tests">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                <span>Tests & Assignments</span>
+            </a>
+
+            <a href="#" class="nav-item" data-page="schedule">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>Schedule</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <a href="#" class="nav-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M12 1v6m0 6v6m5.2-13.2l-4.2 4.2m0 6l4.2 4.2M23 12h-6m-6 0H1m18.2 5.2l-4.2-4.2m0-6l4.2-4.2"></path>
+                </svg>
+                <span>Settings</span>
+            </a>
+
+            <a href="index.html" class="nav-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                    <polyline points="16 17 21 12 16 7"></polyline>
+                    <line x1="21" y1="12" x2="9" y2="12"></line>
+                </svg>
+                <span>Logout</span>
+            </a>
+        </div>
+    </aside>
+    <main class="admin-main">
+        <!-- Header -->
+        <header class="admin-header">
+            <h1>@ViewData["Title"]</h1>
+        </header>
+
+        <section class="page-contentt">
+            @RenderBody()
+        </section>
+    </main>
+    <!-- Main Content -->
+  
+
+    <!-- Course Modal -->
+@*     <div class="modal" id="courseModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="courseModalTitle">Add New Course</h2>
+                <button class="close-button" onclick="closeModal('courseModal')">&times;</button>
+            </div>
+            <form id="courseForm" onsubmit="saveCourse(event)">
+                <input type="hidden" id="courseId">
+                <div class="form-grid">
+                    <div class="form-group full-width">
+                        <label for="courseTitle">Course Title *</label>
+                        <input type="text" id="courseTitle" required>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="courseDescription">Description *</label>
+                        <textarea id="courseDescription" rows="3" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="courseCategory">Category *</label>
+                        <select id="courseCategory" required>
+                            <option value="">Select Category</option>
+                            <option value="programming">Programming</option>
+                            <option value="design">Design</option>
+                            <option value="business">Business</option>
+                            <option value="data-science">Data Science</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="courseLevel">Level *</label>
+                        <select id="courseLevel" required>
+                            <option value="">Select Level</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="courseDuration">Duration (hours) *</label>
+                        <input type="number" id="courseDuration" min="1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="courseStatus">Status *</label>
+                        <select id="courseStatus" required>
+                            <option value="draft">Draft</option>
+                            <option value="active">Active</option>
+                            <option value="completed">Completed</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="secondary-button" onclick="closeModal('courseModal')">Cancel</button>
+                    <button type="submit" class="primary-button">Save Course</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Student Modal -->
+    <div class="modal" id="studentModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="studentModalTitle">Add Student</h2>
+                <button class="close-button" onclick="closeModal('studentModal')">&times;</button>
+            </div>
+            <form id="studentForm" onsubmit="saveStudent(event)">
+                <input type="hidden" id="studentId">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="studentName">Full Name *</label>
+                        <input type="text" id="studentName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="studentEmail">Email *</label>
+                        <input type="email" id="studentEmail" required>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="studentCourses">Enroll in Courses *</label>
+                        <select id="studentCourses" multiple size="4" required>
+                            <!-- Courses will be populated by JavaScript -->
+                        </select>
+                        <small style="color: #888; margin-top: 0.5rem; display: block;">Hold Ctrl/Cmd to select multiple courses</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="studentStatus">Status *</label>
+                        <select id="studentStatus" required>
+                            <option value="active">Active</option>
+                            <option value="inactive">Inactive</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="secondary-button" onclick="closeModal('studentModal')">Cancel</button>
+                    <button type="submit" class="primary-button">Save Student</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Test Modal -->
+    <div class="modal" id="testModal">
+        <div class="modal-content" style="max-width: 800px;">
+            <div class="modal-header">
+                <h2 id="testModalTitle">Create Test</h2>
+                <button class="close-button" onclick="closeModal('testModal')">&times;</button>
+            </div>
+            <form id="testForm" onsubmit="saveTest(event)">
+                <input type="hidden" id="testId">
+                <div class="form-grid">
+                    <div class="form-group full-width">
+                        <label for="testTitle">Test Title *</label>
+                        <input type="text" id="testTitle" required>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="testDescription">Description</label>
+                        <textarea id="testDescription" rows="2"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="testCourse">Course *</label>
+                        <select id="testCourse" required>
+                            <option value="">Select Course</option>
+                            <!-- Courses will be populated by JavaScript -->
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="testType">Test Type *</label>
+                        <select id="testType" required onchange="handleTestTypeChange()">
+                            <option value="">Select Type</option>
+                            <option value="quiz">Quiz</option>
+                            <option value="exam">Exam</option>
+                            <option value="assignment">Assignment</option>
+                            <option value="coding">Coding Challenge</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="testDuration">Duration (minutes) *</label>
+                        <input type="number" id="testDuration" min="1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="testPassingScore">Passing Score (%) *</label>
+                        <input type="number" id="testPassingScore" min="0" max="100" required>
+                    </div>
+
+                    <div class="form-group full-width" id="regularQuestionsSection">
+                        <label for="testQuestions">Number of Questions *</label>
+                        <input type="number" id="testQuestions" min="1">
+                    </div>
+
+                    <!-- Coding Challenge Section -->
+                    <div class="form-group full-width" id="codingChallengeSection" style="display: none;">
+                        <label>Coding Challenge Details</label>
+                        <div style="background: #1a1a1a; padding: 1rem; border-radius: 10px; margin-top: 0.5rem;">
+                            <div class="form-group">
+                                <label for="codingProblem">Problem Statement *</label>
+                                <textarea id="codingProblem" rows="4" placeholder="Describe the coding problem..."></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="codingLanguage">Programming Language *</label>
+                                <select id="codingLanguage">
+                                    <option value="javascript">JavaScript</option>
+                                    <option value="python">Python</option>
+                                    <option value="java">Java</option>
+                                    <option value="cpp">C++</option>
+                                    <option value="csharp">C#</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="codingStarterCode">Starter Code</label>
+                                <textarea id="codingStarterCode" rows="4" placeholder="function solution() {&#10;  // Your code here&#10;}"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Test Cases</label>
+                                <div id="testCasesList">
+                                    <!-- Test cases will be added here -->
+                                </div>
+                                <button type="button" class="secondary-button" onclick="addTestCase()" style="margin-top: 0.5rem;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                    Add Test Case
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="testStatus">Status *</label>
+                        <select id="testStatus" required>
+                            <option value="draft">Draft</option>
+                            <option value="active">Active</option>
+                            <option value="closed">Closed</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="secondary-button" onclick="closeModal('testModal')">Cancel</button>
+                    <button type="submit" class="primary-button">Save Test</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Schedule Modal -->
+    <div class="modal" id="scheduleModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Schedule Course Session</h2>
+                <button class="close-button" onclick="closeModal('scheduleModal')">&times;</button>
+            </div>
+            <form id="scheduleForm" onsubmit="saveSchedule(event)">
+                <input type="hidden" id="scheduleId">
+                <div class="form-grid">
+                    <div class="form-group full-width">
+                        <label for="scheduleCourse">Course *</label>
+                        <select id="scheduleCourse" required>
+                            <option value="">Select Course</option>
+                            <!-- Courses will be populated by JavaScript -->
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="scheduleDate">Date *</label>
+                        <input type="date" id="scheduleDate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="scheduleTime">Time *</label>
+                        <input type="time" id="scheduleTime" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="scheduleDuration">Duration (hours) *</label>
+                        <input type="number" id="scheduleDuration" min="0.5" step="0.5" required>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="scheduleStudents">Students *</label>
+                        <select id="scheduleStudents" multiple size="5" required>
+                            <!-- Students will be populated by JavaScript -->
+                        </select>
+                        <small style="color: #888; margin-top: 0.5rem; display: block;">Hold Ctrl/Cmd to select multiple students</small>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="scheduleNotes">Notes</label>
+                        <textarea id="scheduleNotes" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="secondary-button" onclick="closeModal('scheduleModal')">Cancel</button>
+                    <button type="submit" class="primary-button">Schedule Session</button>
+                </div>
+            </form>
+        </div>
+    </div> *@
+
+    <script src="teacher-script.js"></script>
+</body>
+</html>

@@ -85,6 +85,10 @@
       "PackagePath": "staticwebassets\\css\\styles.css"
     },
     {
+      "Id": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\css\\teacher-styles.css",
+      "PackagePath": "staticwebassets\\css\\teacher-styles.css"
+    },
+    {
       "Id": "C:\\Users\\User\\Desktop\\Surprise\\VTC_CodeLab\\wwwroot\\css\\vtcodelab-admin.css",
       "PackagePath": "staticwebassets\\css\\vtcodelab-admin.css"
     },
