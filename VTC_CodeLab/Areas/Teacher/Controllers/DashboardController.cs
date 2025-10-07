@@ -21,16 +21,18 @@ namespace VTC_CodeLab.Areas.Teacher.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            //var teacher = await _userManager.GetUserAsync(User);
-            //if (teacher == null) { return Unauthorized(); }
+            var teacher = await _userManager.GetUserAsync(User);
+            if (teacher == null)
+                return Unauthorized();
 
-            //var teacherCourses = await _context.Courses
-            //    .Where(c => c.TeacherId == teacher.Id)
-            //    .ToListAsync();
+            var teacherCourses = await _context.Courses
+                .Where(c => c.CourseTeachers.Any(ct => ct.TeacherId == teacher.Id))
+                .ToListAsync();
 
-            //ViewData["CourseCount"] = teacherCourses.Count;
-            //To do add test count
-            return View();
+            ViewData["CourseCount"] = teacherCourses.Count;
+            return View(teacherCourses);
         }
+
+
     }
 }

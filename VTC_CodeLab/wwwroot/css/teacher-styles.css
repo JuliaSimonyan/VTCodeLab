@@ -197,7 +197,7 @@ body {
 
 /* Page Content */
 .page-content {
-  display: none;
+  display: block;
   padding: 2rem;
   flex: 1;
 }
@@ -746,7 +746,6 @@ body {
 
 /* Modal */
 .modal {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -765,11 +764,11 @@ body {
 }
 
 .modal-content {
+    padding:30px;
   background: #111111;
   border: 1px solid #1a1a1a;
   border-radius: 16px;
   width: 100%;
-  max-width: 600px;
   max-height: 90vh;
   overflow-y: auto;
   animation: slideUp 0.3s ease;

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VTC_CodeLab")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+834f5b5545bb8cc6eefa6dabb7fab642e156b0e0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52b0c9cd214f77fe269ff3f6d5fcac50b2a1e3fa")]
 [assembly: System.Reflection.AssemblyProductAttribute("VTC_CodeLab")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VTC_CodeLab")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

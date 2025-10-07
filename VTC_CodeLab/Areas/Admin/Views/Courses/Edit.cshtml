@@ -1,0 +1,46 @@
+﻿@model VTC_CodeLab.Models.Course
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Edit Course";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<link rel="stylesheet" href="~/css/teacher-styles.css">
+
+
+<div id="courseModal" class="vtcodelab-form-container">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 id="courseModalTitle">Edit The Course</h2>
+        </div>
+<form asp-action="Edit" method="post" class="form-container">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label asp-for="Title"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Description"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Credits"></label>
+        <input asp-for="Credits" type="number" class="form-control" />
+    </div>
+            <div class="modal-footer">
+                <button type="submit" class="primary-button">Update Course</button>
+                <a asp-action="Index" class="secondary-button" style="text-decoration:none;">Cancel</a>
+
+            </div>
+   
+</form>
+
+
+   
+    </div>
+</div>
+

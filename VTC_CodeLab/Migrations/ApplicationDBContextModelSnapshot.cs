@@ -247,17 +247,11 @@ namespace VTC_CodeLab.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("TeacherId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("TeacherId");
 
                     b.ToTable("Courses");
                 });
@@ -447,17 +441,6 @@ namespace VTC_CodeLab.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("VTC_CodeLab.Models.Course", b =>
-                {
-                    b.HasOne("VTC_CodeLab.Models.ApplicationUser", "Teacher")
-                        .WithMany()
-                        .HasForeignKey("TeacherId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Teacher");
-                });
-
             modelBuilder.Entity("VTC_CodeLab.Models.CourseStudent", b =>
                 {
                     b.HasOne("VTC_CodeLab.Models.Course", "Course")
@@ -480,15 +463,15 @@ namespace VTC_CodeLab.Migrations
             modelBuilder.Entity("VTC_CodeLab.Models.CourseTeacher", b =>
                 {
                     b.HasOne("VTC_CodeLab.Models.Course", "Course")
-                        .WithMany()
+                        .WithMany("CourseTeachers")
                         .HasForeignKey("CourseId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("VTC_CodeLab.Models.ApplicationUser", "Teacher")
                         .WithMany()
                         .HasForeignKey("TeacherId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Course");
@@ -539,6 +522,8 @@ namespace VTC_CodeLab.Migrations
 
             modelBuilder.Entity("VTC_CodeLab.Models.Course", b =>
                 {
+                    b.Navigation("CourseTeachers");
+
                     b.Navigation("Lessons");
                 });
 
